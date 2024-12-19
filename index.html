@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot in Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+
+    <header>
+        <h2 class="logo">Learnify</h2>
+        <nav class="navigation">
+            <a href="option.html" target="_blank">Home</a>
+            <a href="quiz.html" target="_blank">Quiz</a>
+            <a href="profile.html" target="_blank">Rewards</a>
+            <a href="sgen.html" target="_blank">Schedule Generator</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Revolutionize Learning<br><span>AI Powered</span> <br>Education</h1>
+        <p class="par">Our AI-powered educational platform offers a personalized and engaging learning experience.<br> It integrates innovative features and personalization through understanding ones needs.
+            <br> By tailoring content to individual needs, it aims to enhance understanding, <br>critical thinking, and motivation for students,</p>
+    </div>
+
+    <button class="chatbot-toggler">
+        <span class="material-symbols-outlined"><img src="lenny1.png"/></span>
+        <span class="material-symbols-outlined">close</span>
+    </button>
+    
+    <div class="chatbot">
+        <header>
+            <h2 style="margin-left: 10px;">Chatbot</h2>
+            <span class="material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-symbols-outlined">smart_toy</span>
+                <p>Hi there 👋 <br> How can I help you today? </p>
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea placeholder="Enter a message..." required></textarea>
+            <span id="send-btn" class="material-symbols-outlined">send</span>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,222 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  color: black; 
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.scrollable-container {
+  max-height: 500px;
+  overflow-y: auto; 
+  padding: 10px;
+  background-color: #a4ce8f
+  ;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.bg-purple {
+  background-color: #1d3421
+
+  ;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto; 
+  width: 300px;
+}
+
+.login-container {
+  background-color: #928ad6;
+  padding: 2em;
+  border-radius: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-container h1 {
+  font-family: 'Cursive', sans-serif;
+  text-align: center;
+  color: black; 
+}
+
+.input-group {
+  margin-bottom: 1em;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.5em;
+  border-radius: 0.5em;
+  border: none;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+  border-radius: 0.5em;
+  background-color: #6d6db5;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.icon {
+  margin-right: 0.5em;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button {
+  color: white;
+  background-color: #6d6db5;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5a5a89;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: black; 
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.mt-1 { margin-top: 10px; }
+.mb-1 { margin-bottom: 10px; }
+.pt-1 { padding-top: 10px; }
+.pb-1 { padding-bottom: 10px; }
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5em;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.75em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.25em; }
+h5 { font-size: 1em; }
+h6 { font-size: 0.875em; }
+
+a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.form-container {
+  width: 90%; 
+  max-width: 1200px;
+  margin: 20px auto; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff; 
+  overflow: hidden;
+} 
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+}
+
+.shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rounded {
+  border-radius: 5px;
+}

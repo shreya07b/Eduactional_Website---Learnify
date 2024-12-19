@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>App Grid</title>
+<!-- <link rel="stylesheet" href="styles.css"> -->
+<style>
+  a {
+        text-decoration: none; /* Remove underline */
+        color: white; /* Change color */
+    }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #8379cd; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.2)50%,rgba(0,0,0,0.2)50%), url(mount.jpeg);
+    background-position: center;
+    background-size: cover;
+
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  .app {
+    background: #f8f8f8;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    font-size: 1.5em;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  .app:hover {
+    transform: translateY(-10px);
+  }
+  .schedule { background-color: #0D1E1E; }
+  .flipbot { background-color: #0D1E1E; }
+  .storytel { background-color: #0D1E1E; }
+  .puzzle { background-color: #0D1E1E; }
+  .redeem { background-color: #0D1E1E; }
+  .chatbot { background-color: #0D1E1E; }
+</style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="app schedule"><a href="sgen.html" target="_blank">Schedule Generator</a></div>
+    <div class="app flipbot"><a href="flipbot.html" target="_blank">FlipBot</a></div>
+    <div class="app storytel" ><a href="quiz.html" target="_blank">Quizz</a></div>
+    <div class="app puzzle"><a href="profile.html" target="_blank">Redeem Rewards</a></div>
+    <div class="app redeem"><a href="index.html" target="_blank">ChatBot Lenny</a></div>
+    <div class="app chatbot"><a href="login.html" target="_blank">Logout</a></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+body{
+    background: #f9f9f9;
+    min-height: 100vh;
+    /* overflow: hidden; */
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 99;
+
+}
+
+.logo{
+    font-size: 2em;
+    color: #194b3f;
+    user-select: none;
+    margin-right: 270px;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #194b3f;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px ;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #194b3f;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+
+}
+
+.navigation .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #194b3f;
+    font-weight: 500;
+    margin-left: 40px ;
+    transition: .5s;
+}
+
+.navigation .btnLogin-popup:hover{
+    background: #fff;
+    color: #16293B;
+}
+
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text{
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+    text-decoration: none;
+}
+
+.add{
+    text-decoration: none;
+    color: white;
+}
+
+.add:hover{
+    text-decoration: underline;
+}
+
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.sec{
+    position: relative;
+    background: #003329;
+    padding: 100px;
+}
+
+.sec h2{
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec p {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}

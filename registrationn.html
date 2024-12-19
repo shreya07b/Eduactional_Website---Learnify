@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Page</title>
+<link rel="stylesheet" href="regis.css">
+<style>
+  /* Additional CSS for the submit button */
+  .submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  /* Hover effect */
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body class="flex-center bg-purple">
+  <div class="form-container shadow rounded">
+    <div class="scrollable-container">
+      <div class="form-group">
+        <h2>Join as</h2>
+        <div class="radio-group">
+          <label class="option"><input type="radio" name="role" value="college_student"> College Student</label>
+          <label class="option"><input type="radio" name="role" value="school_student"> School Student</label>
+          <label class="option"><input type="radio" name="role" value="other"> Other</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="flex">
+          <div class="form-group">
+            <h2>Date of Birth</h2>
+            <input type="date" name="dob" class="mb-1">
+          </div>
+    
+        </div>
+      </div>
+
+      <div class="form-group">
+        <h2>Classes</h2>
+        <div class="flex-column">
+          <label><input type="radio" name="class" value="7"> Class 7</label>
+          <label><input type="radio" name="class" value="8"> Class 8</label>
+          <label><input type="radio" name="class" value="9"> Class 9</label>
+          <label><input type="radio" name="class" value="10"> Class 10</label>
+          <label><input type="radio" name="class" value="11"> Class 11</label>
+          <label><input type="radio" name="class" value="12"> Class 12</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <h2>University/Adult Learner</h2>
+        <div class="flex-column">
+          <label><input type="radio" name="university_class" value="1st_year_university"> 1st year university</label>
+          <label><input type="radio" name="university_class" value="2nd_year_university"> 2nd year university</label>
+          <label><input type="radio" name="university_class" value="3rd_year_university"> 3rd year university</label>
+          <label><input type="radio" name="university_class" value="4th_year_university"> 4th year university</label>
+          <label><input type="radio" name="university_class" value="graduate_studies"> Graduate studies</label>
+          <label><input type="radio" name="university_class" value="adult_learner"> Adult learner</label>
+          <label><input type="radio" name="university_class" value="other"> Other</label>
+        </div>
+      </div>
+
+      <!-- Submit button -->
+      <button class="submit-button" onclick="submitForm()" style="background-color: #1d3421;">
+        <a href="option.html" style="color: white;text-decoration: none;">Submit</a></button>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript function to handle form submission
+    function submitForm() {
+      // You can add form validation or other actions here
+      alert("Welcome!");
+    }
+    // JavaScript function to handle form validation
+    function validateForm() {
+      var isValid = true;
+      var role = document.forms["registration-form"]["role"].value;
+      var dob = document.forms["registration-form"]["dob"].value;
+      var selectedClass = document.querySelector('input[name="class"]:checked');
+      var universityClass = document.querySelector('input[name="university_class"]:checked');
+
+      // Reset error messages
+      document.getElementById("role-error").innerHTML = "";
+      document.getElementById("dob-error").innerHTML = "";
+      document.getElementById("class-error").innerHTML = "";
+      document.getElementById("university-class-error").innerHTML = "";
+
+      if (!role) {
+        document.getElementById("role-error").innerHTML = "Role is required";
+        isValid = false;
+      }
+      if (!dob) {
+        document.getElementById("dob-error").innerHTML = "Date of birth is required";
+        isValid = false;
+      }
+      
+
+      return isValid;
+    }
+
+  </script>
+  
+</body>
+</html>

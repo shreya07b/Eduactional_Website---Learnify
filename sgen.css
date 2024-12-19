@@ -1,0 +1,164 @@
+/* Add your CSS styles here */
+a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* Change color */
+}
+.navbar {
+  background-color: #0b0b0b;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%; /* Adjust height to fit the entire viewport */
+  width: 150px; /* Adjust width as needed */
+  display: flex;
+  flex-direction: column; /* Align buttons vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 20px 0;
+}
+
+.nav-button {
+  width: calc(100% - 10px); /* Buttons occupy full width of the navbar with 5px space on each side */
+padding: 20px 15px; /* Adjust padding as needed */
+border: none;
+cursor: pointer;
+background-color: #47664b;
+color: #fff;
+text-align: center;
+text-decoration: none;
+margin: 10px 0;
+box-shadow: -2px 2px 5px black;
+border-radius: 8px;
+
+}
+
+.nav-button:hover {
+  background-color: #123524; /* Adjust hover color if needed */
+}
+
+body{
+  width: 100%;
+  /* background: linear-gradient(to top, rgba(0,0,0,0.2)50%,rgba(0,0,0,0.2)50%), url(mount.jpeg)no-repeat; */
+  background-color: #123524;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.blue {
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 5px;
+}
+
+.box {
+  width: 70%;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 20px;
+  float: left; /* Add this line */
+  margin-left: 10px; /* Add this line */
+}
+
+table {
+  width: 75%; /* Adjust width as needed */
+  margin-top: 10px;
+  margin-left:200px;
+  margin-right: auto;
+  border-collapse: separate; /* Ensure rounded corners are visible */
+  border-spacing: 2; /* Remove any spacing between cells */
+  border-radius: 10px; /* Adjust the value to control the roundness of corners */
+  overflow: hidden;
+  box-shadow: 5px -5px 10px rgb(12, 11, 11);
+ 
+}
+/* Apply light blue background color to the first row */
+tr:first-child th {
+  color: white;
+  background-color: #3f8965;
+}
+
+/* Apply light blue background color to the first column cells */
+td:first-child {
+  color: white;
+  background-color: #3f8965;
+}
+
+/* Apply color to all cells except the ones in the first row and first column */
+td:not(:first-child),
+th:not(:first-child) {
+  background-color: rgb(229, 253, 249); /* Adjust the color as needed */
+}
+
+
+
+th, td {
+  border: 1px solid #1d3421;
+  padding: 8px;
+}
+
+th {
+  background-color: #1d3421;
+}
+.twoboxes {
+  display: flex;
+  margin-right: 250px;
+  margin-left: 300px;
+}
+
+.boxx {
+  margin-top:10px;
+  margin-right: 20px; 
+  flex: 1;
+  background-color: rgb(229, 253, 249);
+  margin-left: 20px; /* Adjust margin as needed */
+  height: 250px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 5px rgb(8, 8, 8);
+  padding-right: 5px;
+}
+.inner-boxx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  background-color: #3f8965; /* Color for the inner box */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Center text horizontally */
+  border-radius: 5px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.inner-boxx h2 {
+  color: white;
+  font-size: 24px; /* Size for the text */
+  margin: 0; /* Remove default margin */
+ 
+}
+ul {
+  list-style: square;
+  padding: 0;
+  text-align: left; /* Center the text horizontally */
+}
+
+ul li {
+  color: black; /* Color for the text */
+  font-size: 18px; /* Font size for the text */
+  margin-bottom: 10px; /* Adjust spacing between list items */
+  margin-left: 160px;
+  cursor: pointer;
+}
+

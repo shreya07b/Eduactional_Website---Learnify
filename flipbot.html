@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcard Learning - FlipBot</title>
+  <link rel="stylesheet" href="flipbot.css">
+</head>
+<body>
+    <nav class="navbar">
+      <button class="nav-button">Profile</button>
+      <button class="nav-button"><a href="option.html" target="_blank">Home</a></button>
+      <button class="nav-button"><a href="index.html" target="_blank">Chatbot</a></button>
+      <button class="nav-button"><a href="quiz.html" target="_blank">Quiz</a></button>
+      <button class="nav-button"><a href="flipbot.html" target="_blank">FlipBot</a></button>
+      <button class="nav-button"><a href="profile.html" target="_blank">Rewards</a></button>
+      <button class="nav-button"><a href="login.html" target="_blank">Logout</a></button>
+      </nav>
+    <div class="outer-container">
+        <div class="container">
+            <header>
+                <h1>Flip<span>Bot.</span></h1>
+              </header>
+              <main>
+                <div class="flashcard-container">
+                    <div class="flashcard-options">
+                        <!-- Small boxes representing flashcards in wait go here -->
+                        <div class="flashcard-wait" style="background-color: #355e3b;">
+                            <span style="background-color: white;border-radius: 90px;" class="flashcard-number">&nbsp;1&nbsp;</span></div>
+                        <div class="flashcard-wait" style="background-color: #47664b;">
+                            <span style="background-color: white;border-radius: 90px;" class="flashcard-number">&nbsp;2&nbsp;</span></div>
+                        <div class="flashcard-wait" style="background-color: #62966a;">
+                            <span style="background-color: white;border-radius: 90px;" class="flashcard-number">&nbsp;3&nbsp;</span></div>
+                        
+                        <!-- Add more flashcard-wait divs as needed -->
+                    </div>
+                  <div class="flashcard">
+                    <!-- Text content of the current flashcard goes here -->
+                   <p class="front"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                  </div>
+                </div>
+            
+                <div class="buttons-container">
+                    <button class="recognized">Recognized</button>
+                    <button class="mastered">Mastered</button>
+                    <button class="not-recognized">Not Recognized</button>
+                </div>
+              </main>
+        </div>
+      
+    </div>
+    <script src="flipbot1.js"></script>
+    
+</body>
+</html>

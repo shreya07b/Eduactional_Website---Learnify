@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule Generator</title>
+  <link rel="stylesheet" type="text/css" href="sgen.css">
+</head>
+<body >
+  
+  <nav class="navbar">
+    <button class="nav-button">Profile</button>
+    <button class="nav-button"><a href="option.html" target="_blank">Home</a></button>
+    <button class="nav-button"><a href="index.html" target="_blank">Chatbot</a></button>
+    <button class="nav-button"><a href="quiz.html" target="_blank">Quiz</a></button>
+    <button class="nav-button"><a href="flipbot.html" target="_blank">FlipBot</a></button>
+    <button class="nav-button"><a href="profile.html" target="_blank">Rewards</a></button>
+    <button class="nav-button"><a href="login.html" target="_blank">Logout</a></button>
+    
+  </nav>
+  <div class="container">
+    <h1 style="color: white;">Schedule <span class="blue">Generator</span></h1>
+    <table>
+      <tr>
+        <th></th>
+        <th>9:00-10:00</th>
+        <th>10:00-11:00</th>
+        <th>11:00-12:00</th>
+        <th>14:00-15:00</th>
+        <th>15:00-16:00</th>
+        <th>18:00-19:00</th>
+      </tr>
+      <tr>
+        <td>COA</td>
+        <td></td>
+        <td>Unit 1 revision</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>CVT</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Tutorial</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>WP</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Project</td>
+        <td>Assignment</td>
+      </tr>
+      <tr>
+        <td>OOPJ</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>MPMC</td>
+        <td>Unit 5 completion</td>
+        <td></td>
+        <td>Notes</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>TCS</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+  <div class="twoboxes">
+    <div class="boxx" id="box1" >
+      <div class="inner-boxx" id="tcomp">
+        <h2>Tasks completed</h2>
+      </div>
+      <ul id="completedTasks"></ul>
+    </div>
+    <div class="boxx" id="box2">
+      <div class="inner-boxx" id="tundone">
+          <h2>Tasks Undone</h2>
+      </div>
+      <ul id="undoneTasks">
+        <li>COA unit 1 revision</li>
+        <li>WP project</li>
+        <li>CVT tutorial</li>
+        <li>MPMC unit 5 completion</li>
+        <li>MPMC notes</li>
+        <li>WP assignment</li>
+        <li>CVT project</li>
+      </ul>
+    </div>
+  </div>
+  
+  <script src="sgen.js"></script>
+</body>
+</html>

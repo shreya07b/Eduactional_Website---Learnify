@@ -1,0 +1,176 @@
+:root {
+    --body-color: #123524; /* Define body color */
+    --box-color: #87ae73; /* Calculate two shades lighter color */
+  }
+  a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Change color */
+  }
+  .navbar {
+    background-color: #0b0b0b;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%; /* Adjust height to fit the entire viewport */
+    width: 150px; /* Adjust width as needed */
+    display: flex;
+    flex-direction: column; /* Align buttons vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 20px 0;
+  }
+  
+  .nav-button {
+    width: calc(100% - 10px); /* Buttons occupy full width of the navbar with 5px space on each side */
+  padding: 20px 15px; /* Adjust padding as needed */
+  border: none;
+  cursor: pointer;
+  background-color: #47664b;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 0;
+  box-shadow: -2px 2px 5px black;
+  border-radius: 8px;
+
+  }
+  
+  .nav-button:hover {
+    background-color: #123524; /* Adjust hover color if needed */
+  }
+  
+  
+  body {
+    background-color: var(--body-color);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Horizontally center the box */
+    align-items: center; /* Vertically center the box */
+    height: 100vh; /* Ensure full viewport height */
+    }
+  .outer-container {
+    display: flex;
+    justify-content: center; /* Horizontally center the outer container */
+    }
+  
+  .container {
+    background-color: var(--box-color); /* Apply two shades lighter color */
+    padding: 10px;
+    border-radius: 10px;
+    width: 750px; /* Adjust the width as needed */
+    height: auto; /* Adjust the height as needed */
+    margin-top: 10px;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  h1 {
+    color: #000;
+    font-size: 3em;
+    margin-bottom: 5px;
+    text-shadow: -2px 2px 2px rgb(48, 48, 48);
+  }
+  
+  h1 span {
+    color: #123524;
+    text-shadow: -2px 2px 2px black;
+    
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .flashcard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .flashcard {
+    background-color: #1d3421;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 2px;
+    height: 300px;
+    width: 30%;
+    border-radius: 5px;
+    text-align: center; 
+    text-decoration: underline;
+    text-decoration-color: rgb(254, 254, 255);
+    line-height: 2;
+    font-size: 1.01em;
+    font-family: 'Comic Sans MS', cursive;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0); /* Add shadow */
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+  .flashcard p {
+    margin: 0; /* Remove default margin for paragraphs */
+  }
+  
+  .flashcard-options {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px; /* Adjust padding as needed */
+    background-color: var(--body-color); /* Light background color */
+    border-radius: 10px;
+    right: 70px;
+    top: 40px;
+  }
+  
+  .flashcard-wait {
+    width: 150px;
+    height: 180px;
+    border-radius: 5px;
+    background-color: #ccc; /* Adjust background color as needed */
+    margin-bottom: 10px; /* Space between flashcards */
+    box-shadow: -5px 5px 5px black; /* Add shadow */
+  }
+  
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  button {
+    padding: 20px 40px; /* Adjust the padding to increase button size */
+    margin: 0 5px; 
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Comic Sans MS', cursive;
+    color: white;
+    box-shadow: 5px -5px 2px white; /* Add shadow */
+    margin-bottom: 10px;
+  }
+  .recognized:hover,
+.mastered:hover,
+.not-recognized:hover {
+  background-color: #2d3f23; /* Change the background color on hover */
+}
+  
+  .recognized {
+    background-color: #0e140b;
+  }
+  
+  .mastered {
+    background-color: #0e140b;
+  }
+  
+  .not-recognized {
+    background-color: #0e140b;
+  }
+  
