@@ -1,1 +1,1 @@
-# Eduactional_Website---Learnify
+# Educational_Website---Learnify
